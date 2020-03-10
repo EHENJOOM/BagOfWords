@@ -13,7 +13,9 @@ public class WordBag implements Cloneable {
     private int totalWords;
 
     public int getTotalWords() {
-        words.forEach(temp -> totalWords += temp.getWeight());
+        if (totalWords == 0) {
+            words.forEach(temp -> totalWords += temp.getWeight());
+        }
         return totalWords;
     }
 

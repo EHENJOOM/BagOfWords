@@ -31,7 +31,7 @@ public class Analyzer {
                         i++;
                     }
                 }
-                float IDF = (float) Math.log(sentenceList.size() / (double)(i + 1));
+                float IDF = (float) Math.log(sentenceList.size() / (double) (i + 1));
                 word.setWeight(TF * IDF);
             }
         }

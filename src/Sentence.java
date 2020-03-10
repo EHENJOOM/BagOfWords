@@ -7,8 +7,11 @@ import java.util.*;
  */
 public class Sentence {
 
+    // 句子原句
     private String sentence;
+    // 针对该句的总体词袋
     private WordBag wordBag = new WordBag();
+    // 该句分解后的词
     private List<String> allWords = new ArrayList<>();
 
     public void analyze() {
